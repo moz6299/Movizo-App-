@@ -1,0 +1,12 @@
+/* Media Queries for FilterGroup */
+@media (max-width: 768px) {
+    .starlist {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .starlist li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

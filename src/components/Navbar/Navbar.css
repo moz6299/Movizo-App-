@@ -1,0 +1,162 @@
+/* Navbar.css */
+nav {
+  background-color: var(--body_background);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e50914;
+  font-family: Arial, sans-serif;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--heading_color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--heading_color);
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+nav ul li img {
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+.right-side {
+  display: flex;
+}
+
+.active {
+  border-bottom: solid 1px yellow;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .right-side {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    margin-left: 1rem;
+  }
+
+  nav ul li img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .right-side {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -.5rem;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    margin-left: 0.5rem;
+  }
+
+  nav ul li img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .right-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  nav ul li a {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul li img {
+    width: 20px;
+    height: 20px;
+  }
+}

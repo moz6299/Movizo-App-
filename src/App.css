@@ -1,0 +1,91 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+  }
+  
+  nav {
+    background-color: #141414;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li img {
+    margin-left: 0.5rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  nav ul li:hover {
+    cursor: pointer;
+  }
+
+
+  
+  @media (max-width: 600px) {
+    nav ul li {
+      margin-left: 1rem;
+    }
+  
+    nav ul li img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+
+
+  /* Media Queries for App.css */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  nav ul li img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+  

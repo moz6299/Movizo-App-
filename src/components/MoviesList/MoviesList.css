@@ -1,0 +1,200 @@
+/* MoviesList.css */
+.movieslist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--body_background);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #e50914;
+  font-family: Arial, sans-serif;
+}
+
+.movieslist-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.left-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.left-header ul li {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.right-header {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.right-header select {
+  margin-left: auto;
+  margin-right: 1rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.9rem;
+}
+
+.right-header select:focus {
+  outline: none;
+}
+
+.right-header select option {
+  background-color: #141414;
+  color: white;
+}
+
+.right-header select:hover {
+  cursor: pointer;
+}
+
+.fireimg {
+  width: 2rem;
+}
+
+.popte {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.starlist {
+  display: flex;
+  gap: 0.6rem;
+  margin-right: 1rem;
+}
+
+.movscard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.active {
+  border-bottom: solid rgb(216, 212, 212) 1px;
+  padding-bottom: 0.5rem;
+}
+
+li {
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .movieslist-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .movieslist-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+
+
+  .right-header {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-header ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .left-header ul li {
+    margin-left: 1rem;
+  }
+
+  .starlist{
+    gap: 1.5rem;
+  }
+
+  .right-header select {
+    margin: auto;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .movieslist-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .left-header ul li {
+    margin-left: 1rem;
+  }
+
+  .fireimg {
+    width: 1.5rem;
+  }
+
+  .right-header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .left-header ul {
+    margin-top: 1rem;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .movieslist-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .left-header ul li {
+    margin-left: 0.5rem;
+  }
+
+  .fireimg {
+    width: 1.2rem;
+  }
+
+  .right-header select {
+    font-size: 1rem;
+    margin: auto;
+  }
+
+  .left-header ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .movieslist-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .left-header ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .left-header ul li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .fireimg {
+    width: 1rem;
+  }
+}
